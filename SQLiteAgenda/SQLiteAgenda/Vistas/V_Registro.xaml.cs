@@ -29,7 +29,7 @@ namespace SQLiteAgenda.Vistas
                 Apellidos = txtApellidos.Text, Telefono = txtTelefono.Text};
             conexion.InsertAsync(DatosContacto);
             limpiarFormulario();
-            DisplayAlert("Confirmación","el contacto se regitró correctamente","OK");
+            DisplayAlert("Confirmación","el contacto se registró correctamente","OK");
         }
         void limpiarFormulario()
         {
