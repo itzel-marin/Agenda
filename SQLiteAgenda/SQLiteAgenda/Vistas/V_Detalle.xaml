@@ -6,10 +6,15 @@
              mc:Ignorable="d"
              x:Class="SQLiteAgenda.Vistas.V_Detalle">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
+        <StackLayout Margin="5" BackgroundColor="LightBlue">
+            <Label Text="Datos del contacto" BackgroundColor="WhiteSmoke"
                 HorizontalOptions="CenterAndExpand" />
+            <Label x:Name="lblMensaje" HorizontalOptions="Center"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre"/>
+            <Entry x:Name="txtApellidos" Placeholder="Apellidos"/>
+            <Entry x:Name="txtTelefono" Placeholder="Teléfono"/>
+            <Button Text="Actualizar" x:Name="btn_actualizar"/>
+            <Button Text="Eliminar" x:Name="btn_eliminar"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
